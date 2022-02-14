@@ -59,7 +59,13 @@ h2{
     text-align:center;
     margin-left:auto;
     margin-right:auto;
-    padding-left:50px;
+    padding-left:5%;
+}
+
+@media screen and (max-width:400px){
+    .profile{
+        font-size:50%;
+    }
 }
 
 .profile tr td {
@@ -79,7 +85,7 @@ article{
     margin-bottom:2%;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:400px){
     article{
         display:flex;
         flex-direction:column;
@@ -98,11 +104,18 @@ article{
 .article_image{
     width:20%;
     height:20%;
-    margin: 1%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:auto;
+    margin-bottom:auto;
 }
 
-.article_text{
-    margin-right:5%;
+@media screen and (max-width:400px){
+    .article_text{
+        font-size:50%;
+        margin-left:5%;
+        margin-right:5%;
+    }
 }
 
 h3{
