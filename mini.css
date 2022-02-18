@@ -6,7 +6,7 @@ font-family: 'Kosugi Maru', sans-serif;
 */
 
 body{
-    background-color:#00000B;
+        background-color:#111111;
 }
 
 h1{
@@ -24,11 +24,11 @@ h2{
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
-    0 0 42px #7aFFFF,
-    0 0 82px #7aFFFF,
-    0 0 92px #7aFFFF,
-    0 0 102px #7aFFFF,
-    0 0 151px #7aFFFF;
+    0 0 42px #FF00FF,
+    0 0 82px #FF00FF,
+    0 0 92px #FF00FF,
+    0 0 102px #FF00FF,
+    0 0 151px #FF00FF;
     font-weight:100;
     font-family: 'Kosugi Maru', sans-serif;
 }
@@ -37,45 +37,25 @@ h2{
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width:13vw;
-    border-radius:30px;
+    width:10%;
 }
 
 .link-segment{
-    display:flex;
-    justify-content:center;
-    padding-top:10px;
+    width:15%;
+    display:block;
     margin-left:auto;
     margin-right:auto;
+    padding-top:10px;
 }
 
 .link-button{
+    width:40%;
     padding-left:3%;
     padding-right:3%
 }
 
-.link{
-    width:4%;
-    display:inline-block;
-    padding-left:1%;
-    padding-right:1%;
-}
-
-.twitter-icon{
-    width:100%;
+.st0 {
     fill: #1D9BF0;
-    
-}
-
-.twitter-icon:hover{
-    fill:#FFFFFF;
-    background-size:200%;
-    background-color:#1D9BF0;
-    border-radius:7px;
-}
-
-.github-logo{
-    display:inline-block;
 }
 
 .profile{
@@ -84,19 +64,11 @@ h2{
     margin-left:auto;
     margin-right:auto;
     padding-left:5%;
-    padding-right:5%;
-    font-size:2vw;
 }
 
-@media (min-width:960px){
+@media screen and (max-width:400px){
     .profile{
-        color:white;
-        text-align:center;
-        margin-left:auto;
-        margin-right:auto;
-        padding-left:5%;
-        padding-right:5%;
-        font-size:1.5vw;
+        font-size:50%;
     }
 }
 
@@ -106,27 +78,24 @@ h2{
     padding-bottom:10px;
     padding-left:30px;
     text-align:left;
-    border-bottom: 1px solid #7aFFFF;
+    border-bottom: 1px solid #FF00FF;
 }
-
+    
 article{
-    border-top:1px solid #7aFFFF;
-    border-bottom:1px solid #7aFFFF;
     display:flex;
-    justify-content:space-around;
+    flex-direction:column;
+    border-top:1px solid #FF00FF;
+    border-bottom:1px solid #FF00FF;
     margin-bottom:2%;
 }
 
 .article{
     color:white;
-    padding-left:5%;
-    padding-right:5%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:10%;
+    margin-right:10%;
 }
 
-.article-image{
-    display:inline;
+.article_image{
     width:20%;
     height:20%;
     margin-left:5%;
@@ -135,21 +104,10 @@ article{
     margin-bottom:auto;
 }
 
-@media screen and (max-width:960px){
-    .article-text{
-        font-size:50%;
-        margin-left:5%;
-        margin-right:5%;
-    }
-
-    .article-image{
-        display:inline;
-        width:50%;
-        margin-left:5%;
-        margin-right:5%;
-        margin-top:auto;
-        margin-bottom:auto;
-    }
+.article_text{
+    font-size:50%;
+    margin-left:5%;
+    margin-right:5%;
 }
 
 h3{
