@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Candal&family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Candal&family=Passion+One&display=Kosugi+Maru&display=swap');
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Candal', sans-serif;
@@ -9,26 +9,100 @@ body{
     background-color:#00000B;
 }
 
+.logo-segment{
+    width100%;
+    height:100vh;
+    background-image:radial-gradient(rgb(92, 92, 92), 1px,transparent 1px);
+    background-size:50px 50px ;
+    animation:fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.logo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family: 'Passion One', cursive;
+    display:inline-block;
+    color:#fff;
+    letter-spacing:3px;
+    font-size:10vw;
+    text-shadow:0 1px 30px #2DD9FE,
+                0 0 12px #fff,
+                2px 5px 60px #00A3D5;
+    animation:fadeIn 8s ease 0s 1 normal;
+}
+
+.logo >span{
+    -webkit-animation:blink 3s infinite alternate;
+    animation:blink 3s infinite alternate;
+    
+}
+
+@-webkit-keyframes blink{
+    40%{
+        opacity:.85;
+    }
+    42%{
+        opacity:.4;
+    }
+    43%{
+        opacity:.85;
+    }
+    45%{
+        opacity:.4;
+    }
+    46%{
+        opacity:.85;
+    }
+}
+
+@keyframes blink{
+    40%{
+        opacity:.85;
+    }
+    42%{
+        opacity:.4;
+    }
+    43%{
+        opacity:.85;
+    }
+    45%{
+        opacity:.4;
+    }
+    46%{
+        opacity:.85;
+    }
+}
+
+.info-segment{
+    height:100vh;
+}
+
 h1{
     color:white;
     margin-left:10%;
     font-family: 'Abel', sans-serif;
-    font-weight:100;
+    font-size:2vw;
 }
 
 h2{
-    font-size:200%;
+    font-size:2.5vw;
     text-align:center;
     color:white;
     text-shadow: 
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #7aFFFF,
-    0 0 82px #7aFFFF,
-    0 0 92px #7aFFFF,
-    0 0 102px #7aFFFF,
-    0 0 151px #7aFFFF;
+    0 1px 30px #2DD9FE,
+                0 0 12px #fff,
+                2px 5px 60px #00A3D5;
     font-weight:100;
     font-family: 'Kosugi Maru', sans-serif;
 }
@@ -44,7 +118,7 @@ h2{
 .link-segment{
     display:flex;
     justify-content:center;
-    padding-top:10px;
+    padding-top:15px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -64,7 +138,8 @@ h2{
 .twitter-icon{
     width:100%;
     fill: #1D9BF0;
-    
+    animation:fuwa-inv 3s infinite ease-in-out .8s alternate;
+    transition:0.5s ease-in-out;
 }
 
 .twitter-icon:hover{
@@ -74,13 +149,53 @@ h2{
     border-radius:7px;
 }
 
-.github-logo{
+.github-icon{
+    position:relative;
+    width:100%;
     display:inline-block;
+    fill: #fff;
+    fill-rule: evenodd;
+    animation:fuwa 3s infinite ease-in-out .8s alternate;
+    transition:0.5s ease-in-out;
 }
+
+@keyframes fuwa{
+    0%{
+        transform:translate(0,0)rotate(-7deg);
+    }
+    50%{
+        transform:translate(0,-7px)rotate(0deg);
+    }
+    100%{
+        transform:translate(0,0)rotate(7deg);
+    }
+}
+
+@keyframes fuwa-inv{
+    0%{
+        transform:translate(0,0)rotate(7deg);
+    }
+    50%{
+        transform:translate(0,-7px)rotate(0deg);
+    }
+    100%{
+        transform:translate(0,0)rotate(-7deg);
+    }
+}
+
+.github-icon:hover{
+    display:inline-block;
+    fill:#000000;
+    fill-rule: evenodd;
+    background-color:#fff;
+    background-size:200%;
+    border-radius:7px;
+}
+
+
 
 .profile{
     color:white;
-    text-align:center;
     margin-left:auto;
     margin-right:auto;
     padding-left:5%;
@@ -91,7 +206,6 @@ h2{
 @media (min-width:960px){
     .profile{
         color:white;
-        text-align:center;
         margin-left:auto;
         margin-right:auto;
         padding-left:5%;
@@ -105,56 +219,11 @@ h2{
     padding-top:10px;
     padding-bottom:10px;
     padding-left:30px;
-    text-align:left;
     border-bottom: 1px solid #7aFFFF;
 }
 
-article{
-    border-top:1px solid #7aFFFF;
-    border-bottom:1px solid #7aFFFF;
-    display:flex;
-    justify-content:space-around;
-    margin-bottom:2%;
-}
-
-.article{
-    color:white;
-    padding-left:5%;
-    padding-right:5%;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.article-image{
-    display:inline;
-    width:20%;
-    height:20%;
-    margin-left:5%;
-    margin-right:5%;
-    margin-top:auto;
-    margin-bottom:auto;
-}
-
-@media screen and (max-width:960px){
-    .article-text{
-        font-size:50%;
-        margin-left:5%;
-        margin-right:5%;
-    }
-
-    .article-image{
-        display:inline;
-        width:50%;
-        margin-left:5%;
-        margin-right:5%;
-        margin-top:auto;
-        margin-bottom:auto;
-    }
-}
-
-h3{
-    clear:both;
-    color:white;
+.profile th{
+    text-align:left;
 }
 
 footer{
@@ -172,4 +241,8 @@ h6{
     font-size:20px;
     color:black;
     font-family: 'Candal', sans-serif;
+}
+
+footer{
+    margin-top:10px;
 }
