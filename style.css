@@ -159,6 +159,30 @@ h2{
     transition:0.5s ease-in-out;
 }
 
+
+.github-icon:hover{
+    display:inline-block;
+    fill:#000000;
+    fill-rule: evenodd;
+    background-color:#fff;
+    background-size:200%;
+    border-radius:7px;
+}
+
+.hackmd-icon{
+    fill:#fff;
+    animation:fuwa-inv 3s infinite ease-in-out .8s alternate;
+    transition:0.5s ease-in-out;
+}
+
+.hackmd-icon:hover{
+    display:inline-block;
+    fill:#000000;
+    background-color:#fff;
+    background-size:200%;
+    border-radius:7px;
+}
+
 @keyframes fuwa{
     0%{
         transform:translate(0,0)rotate(-7deg);
@@ -182,16 +206,6 @@ h2{
         transform:translate(0,0)rotate(-7deg);
     }
 }
-
-.github-icon:hover{
-    display:inline-block;
-    fill:#000000;
-    fill-rule: evenodd;
-    background-color:#fff;
-    background-size:200%;
-    border-radius:7px;
-}
-
 
 
 .profile{
